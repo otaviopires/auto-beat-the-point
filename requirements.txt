@@ -1,2 +1,2 @@
-selenium==2.53.0
+selenium
 chromedriver-binary==2.37.0
