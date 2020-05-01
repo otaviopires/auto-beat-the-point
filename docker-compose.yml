@@ -3,11 +3,9 @@ version: '3'
 services:
   lambda:
     build: .
+    env_file: .env
     environment:
       - PYTHONPATH=/var/task/src:/var/task/lib
       - PATH=/var/task/bin
-      - AWS_BUCKET_NAME='beat-the-point-bucket'
-      - AWS_ACCESS_KEY_ID='AKIAIGUQZH5L7KGXS3MA'
-      - AWS_SECRET_ACCESS_KEY='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'
     volumes:
       - ./src/:/var/task/src/
